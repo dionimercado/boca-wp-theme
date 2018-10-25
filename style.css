@@ -1,0 +1,41 @@
+/*
+Theme Name: Boca Restaurant Lounge
+Theme URI: http://bocarestaurantlounge.com
+Version: 1.0
+Author: Dioni Mercado
+Author URI: http://dionimercado.com
+*/
+
+body {
+  background-color: #fff;
+}
+
+.headerNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: rgba(0,0,0,0.30);
+  font-family: 'Poppins', sans-serif;
+}
+
+.headerNav .nav-logo img {
+  height: 70px;
+  padding: 10px 0;
+}
+
+.homeSlider {
+  background-color: #000;
+  /* height: 100vh; */
+}
+
+.page-header {
+  font-family: 'Poppins', sans-serif;
+}
+.page-header h1 {
+  font-weight: 700;
+}
+.page-header h1 span{
+  color: #d8000f;
+}
