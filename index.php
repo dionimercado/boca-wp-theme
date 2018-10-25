@@ -58,13 +58,15 @@
               <hr>
             </div>
             <div class="open-time dart-pt-20 text-center">
-              <p class="dart-fs-16"><span class="yellow text-uppercase">MONDAY - WEDNESDAY</span><br>
+              <p>
+                <span class="text-red text-uppercase">MONDAY - WEDNESDAY</span><br>
                 4PM - 12AM<br>
-                11AM - 10PM (Lunch/Dinner)<br><br>
-                <span class="yellow text-uppercase">SATURDAY / SUNDAY</span><br>
-                8AM - 1PM (Brunch) <br>
-                1PM - 9PM (Lunch/Dinner)</p>
-                <p><span class="yellow dart-fs-24">+1 (917) 688-1031</span></p>
+                11AM - 10PM<br><br>
+                <span class="text-red text-uppercase">THURSDAY - SATURDAY</span><br>
+                4PM - 4AM<br><br>
+                <span class="text-red text-uppercase">SUNDAY</span><br>
+                12PM - 4AM<br>
+              </p>
               </div>
             </div>
           </div>

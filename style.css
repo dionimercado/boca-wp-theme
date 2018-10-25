@@ -10,6 +10,10 @@ body {
   background-color: #fff;
 }
 
+.text-red {
+  color: #d8000f;
+}
+
 .heading{
 	text-align: center;
 }
