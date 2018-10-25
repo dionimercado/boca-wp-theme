@@ -59,14 +59,16 @@ jQuery( function($) {
     responsiveClass:true,
     responsive:{
         0:{
-            items:2,
+            items:1,
             margin: 10,
             nav:false,
-            loop:false
+            loop:false,
+            stagePadding: 80,
+            startPosition: 1,
         },
         600:{
             items:3,
-            nav:false
+            nav:false,
         },
         1000:{
             items:4,
