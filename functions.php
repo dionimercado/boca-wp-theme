@@ -62,6 +62,7 @@ function boca_enqueue_scripts() {
   wp_enqueue_style( 'boca', get_template_directory_uri() . '/style.css', array('bootstrap'), uniqid() );
   wp_enqueue_style( 'bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css' );
   wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Poppins:400,600,700|Allura' );
+  wp_enqueue_style( 'fontawesome', 'https://use.fontawesome.com/releases/v5.5.0/css/all.css' );
 	// wp_enqueue_style( 'boca', get_stylesheet_directory_uri() . '/assets/css/boca.css', null, uniqid() );
 
   wp_enqueue_style( 'fancybox', 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css', array(), '3.3.7', 'all');

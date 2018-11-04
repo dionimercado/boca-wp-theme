@@ -5,22 +5,22 @@ jQuery( function($) {
 
   // Smooth Scrolling: Smooth scrolls to an ID on the current page.
   // To use this feature, add a link on your page that links to an ID, and add the .page-scroll class to the link itself. See the docs for more details.
-  jQuery('a.page-scroll').bind('click', function(event) {
-      var $anchor = jQuery(this);
-      jQuery('html, body').stop().animate({
-          scrollTop: (jQuery($anchor.attr('href')).offset().top - 62)
-      }, 800, 'easeInOutExpo');
-      event.preventDefault();
-  });
+  // jQuery('a.page-scroll').bind('click', function(event) {
+  //     var $anchor = jQuery(this);
+  //     jQuery('html, body').stop().animate({
+  //         scrollTop: (jQuery($anchor.attr('href')).offset().top - 62)
+  //     }, 800, 'easeInOutExpo');
+  //     event.preventDefault();
+  // });
 
   // jQuery to collapse the navbar on scroll
-  jQuery(window).scroll(function() {
-      if (jQuery("#header").offset().top > 80) {
-          jQuery("#header").addClass("shrink");
-      } else {
-        jQuery("#header").removeClass("shrink");
-      }
-  });
+  // jQuery(window).scroll(function() {
+  //     if (jQuery("#header").offset().top > 80) {
+  //         jQuery("#header").addClass("shrink");
+  //     } else {
+  //       jQuery("#header").removeClass("shrink");
+  //     }
+  // });
 
   // toggleClass to hambuger menu
   jQuery('.navbar-toggler').on('click', function() {
@@ -45,21 +45,22 @@ jQuery( function($) {
   });
 
   jQuery(".boca-events").owlCarousel({
-    loop: true,
+    loop: false,
     center:false,
     startPosition: 0,
     margin:20,
     dots: false,
     autoplay: true,
-    autoplayTimeout: 4000,
+    autoplayTimeout: 7000,
     navText: [
-      "<i class='fa fa-angle-left'></i>",
-      "<i class='fa fa-angle-right'></i>"
+      '<i class="fas fa-chevron-left"></i>',
+      '<i class="fas fa-chevron-right"></i>'
     ],
     responsiveClass:true,
     responsive:{
         0:{
             items:1,
+            slideBy: 1,
             margin: 10,
             nav:false,
             loop:false,
@@ -67,11 +68,15 @@ jQuery( function($) {
             startPosition: 1,
         },
         600:{
-            items:3,
+            items:2,
+            slideBy: 2,
+            startPosition: 2,
+            stagePadding: 80,
             nav:false,
         },
         1000:{
-            items:4,
+            items:3,
+            slideBy: 3,
             nav:false,
             loop:false
         }
@@ -79,4 +84,14 @@ jQuery( function($) {
   });
 
 
+   jQuery(".reservation-form :input").each(function(index, elem) {
+      var eId = $(elem).attr("id");
+      var label = null;
+      if (eId && (label = $(elem).parents("form").find("label[for="+eId+"]")).length == 1) {
+        // console.log('ss',$(label).html())
+          $(elem).attr("placeholder", $(label).html().replace(/\s/g, ''));
+          // $(elem).attr("placeholder", label.replace(/\s/g, ''));
+          $(label).remove();
+      }
+   });
 });
