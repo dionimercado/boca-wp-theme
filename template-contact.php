@@ -2,7 +2,7 @@
 /* Template Name: Contact */
 get_header()
 ?>
-  <iframe class="mb-5" style="border: 0; margin-top: 86px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1921.0972599132542!2d-149.899895!3d61.216589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x56c8bd81211e14b9%3A0x79ddea9c4d5efc1f!2s901+W+6th+Ave%2C+Anchorage%2C+AK+99501%2C+EE.+UU.!5e0!3m2!1ses!2sdo!4v1422583210298" width="100%" height="400" frameborder="0"></iframe>
+  <iframe class="mb-5" style="border: 0; margin-top: 86px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12070.176161973017!2d-73.8929148!3d40.8599335!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4fe1361fd9100833!2sBoca+Restaurant+and+Lounge!5e0!3m2!1sen!2sus!4v1541313109755" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
   <div class="container mb-5">
     <div class="row">
       <div class="col-md-4">
